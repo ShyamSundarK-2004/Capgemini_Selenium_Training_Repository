@@ -1,0 +1,44 @@
+package com.xpath;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class XPathByText_Example {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+
+		// 1. Wikipedia English
+		driver.get("https://www.wikipedia.org/");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//strong[text()='English']")).click();
+		Thread.sleep(2000);
+
+		// 2. Amazon Sign In
+		driver.get("https://www.amazon.in/");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[text()='Hello, sign in']")).click();
+		Thread.sleep(2000);
+
+		// 3. LinkedIn Sign in
+		driver.get("https://www.linkedin.com/");
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//a[text()='Join now']")).click();
+		Thread.sleep(2000);
+
+		// 4. Flipkart Login
+		driver.get("https://www.flipkart.com/");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[text()='New to Flipkart? Create an account']")).click();
+		Thread.sleep(2000);
+
+		// 5. Instagram Sign up
+		driver.get("https://www.instagram.com/");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//span[text()='Create new account']")).click();
+		Thread.sleep(2000);
+
+		driver.quit();
+	}
+}

@@ -1,0 +1,31 @@
+package com.xpath;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class XpathByStartsWith_Example {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		WebDriver driver = new ChromeDriver();
+
+		driver.manage().window().maximize();
+
+		// 1. clicking on mobiles
+		driver.get("https://www.amazon.in/");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[starts-with(text(),'Mobiles')]")).click();
+		Thread.sleep(2000);
+
+		// 2. search for toys
+		driver.get("https://www.amazon.in/");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[starts-with(@placeholder,'Search Amazon.in')]")).sendKeys("Toys",
+				Keys.ENTER);
+		Thread.sleep(2000);
+
+	}
+
+}

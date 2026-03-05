@@ -1,0 +1,31 @@
+package com.practise.testcases;
+
+import java.time.Duration;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestCase01 {
+	public static void main(String[] args) throws InterruptedException {
+
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.get("https://www.myntra.com/");
+
+		driver.findElement(By.cssSelector("[data-reactid='1039']")).sendKeys("Dress", Keys.ENTER);
+
+		driver.findElement(By.xpath("//li[@class='product-base']/*//img")).click();
+
+		Set<String> childid = driver.getWindowHandles();
+		Iterator<String> i = childid.iterator();
+		i.next();
+		driver.switchTo().window(i.next());
+		driver.findElement(By.xpath("//span[text()='WISHLIST']")).click();
+	}
+
+}

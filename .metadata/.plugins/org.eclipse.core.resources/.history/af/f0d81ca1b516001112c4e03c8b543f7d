@@ -1,0 +1,33 @@
+package com.webDriverInterrogationMethods;
+
+import java.time.Duration;
+import java.util.LinkedHashSet;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Verification_TestCase01 {
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		driver.navigate().to("https://demowebshop.tricentis.com/");
+		Thread.sleep(2000);
+		driver.findElement(By.linkText("Facebook")).click();
+		driver.findElement(By.linkText("Twitter")).click();
+		driver.findElement(By.linkText("YouTube")).click();
+		driver.findElement(By.linkText("Google+")).click();
+
+		driver.switchTo().newWindow(WindowType.WINDOW.TAB);
+		LinkedHashSet<String> Ids = (LinkedHashSet<String>) driver.getWindowHandles();
+		for (String id : Ids) {
+			driver.switchTo().window(id);
+			String title = driver.getTitle();
+			System.out.println(title + "->" + id);
+			Thread.sleep(3000);
+		}
+
+	}
+}

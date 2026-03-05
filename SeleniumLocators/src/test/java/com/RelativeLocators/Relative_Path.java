@@ -1,0 +1,24 @@
+package com.RelativeLocators;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.locators.RelativeLocator;
+
+public class Relative_Path {
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver = new ChromeDriver();
+
+		driver.get("https://www.amazon.in");
+
+		Thread.sleep(2000);
+
+		WebElement search = driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
+		search.sendKeys("iphone 14");
+		Thread.sleep(2000);
+		driver.findElement(RelativeLocator.with(By.tagName("input")).toRightOf(search));
+
+	}
+
+}

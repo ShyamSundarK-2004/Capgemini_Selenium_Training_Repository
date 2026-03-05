@@ -1,0 +1,45 @@
+package com.SeleniumPopups;
+
+import java.time.Duration;
+import java.util.List;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestCase01 {
+	public static void main(String[] args) throws InterruptedException {
+
+		WebDriver driver = new ChromeDriver();
+
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.get("https://demoapps.qspiders.com/ui/browser?sublist=0");
+
+		// locate the view more button
+		WebElement parentid = driver.findElement(By.xpath("//img[@alt='Watches']/following::button[1]"));
+		parentid.click();
+
+		Set<String> sessionsIds = driver.getWindowHandles();
+		sessionsIds.remove(parentid);
+
+		for (String s : sessionsIds)
+			driver.switchTo().window(s);
+
+		driver.findElement(By.xpath("//button[text()='Add to Cart']")).click();
+		driver.findElement(By.xpath("//button[text()='Add to Cart']")).click();
+		driver.findElement(By.xpath("//*[local-name()='svg']")).click();
+
+		if (driver.findElement(By.tagName("h2")).isDisplayed())
+			System.out.println("page verified");
+
+		List<WebElement> elements = driver.findElements(By.xpath("//div[@class='space-y-4']/*"));
+		System.out.println(elements.size());
+
+		driver.quit();
+
+	}
+
+}

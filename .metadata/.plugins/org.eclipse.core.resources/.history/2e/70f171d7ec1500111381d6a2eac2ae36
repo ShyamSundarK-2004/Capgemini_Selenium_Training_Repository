@@ -1,0 +1,10 @@
+package com.practise.testcases;
+
+public class Selenium_navigateAPI_TestCase {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

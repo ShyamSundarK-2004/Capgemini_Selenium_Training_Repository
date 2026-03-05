@@ -1,0 +1,24 @@
+package com.practise.testcases;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class YoutubeVideoPLaying {
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver = new ChromeDriver();
+
+		driver.get("https://www.youtube.com/");
+
+		driver.findElement(By.name("search_query")).sendKeys("mr bean", Keys.ENTER);
+
+		Thread.sleep(3000);
+
+		driver.findElements(By.id("video-title")).get(0).click();
+		Thread.sleep(3000);
+
+		driver.findElement(By.xpath("//button[contains(.,'Share')]")).click();
+	}
+
+}

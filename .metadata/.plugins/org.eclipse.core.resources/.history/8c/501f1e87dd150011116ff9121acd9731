@@ -1,0 +1,46 @@
+package com.relativelocator;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.locators.RelativeLocator;
+
+public class AutomationDemoSite_RelativeLocators {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		WebDriver driver = new ChromeDriver();
+
+		driver.manage().window().maximize();
+		driver.get("https://demo.automationtesting.in/Register.html");
+
+		Thread.sleep(2000);
+
+		WebElement firstname = driver.findElement(By.cssSelector("[placeholder='First Name']"));
+		firstname.sendKeys("Shyam");
+
+		WebElement secondname = driver.findElement(RelativeLocator.with(By.tagName("input")).toRightOf(firstname));
+		secondname.sendKeys("Sundar K");
+
+		WebElement addr = driver.findElement(RelativeLocator.with(By.tagName("textarea")).below(secondname));
+		addr.sendKeys("chennai, tamilnadu, india");
+
+		WebElement email = driver.findElement(RelativeLocator.with(By.xpath("//input[@type='email']")).below(addr));
+		email.sendKeys("shyamson366@gmail.com");
+
+		WebElement phno = driver.findElement(RelativeLocator.with(By.tagName("input")).below(email));
+		phno.sendKeys("1234567890");
+
+		WebElement gender = driver.findElement(RelativeLocator.with(By.xpath("//input[@value='Male']")).below(phno));
+		gender.click();
+
+		WebElement hobbies1 = driver.findElement(RelativeLocator
+				.with(By.xpath("//label[.='Hobbies']/following-sibling::div/child::div//input[@id='checkbox1']")));
+		hobbies1.click();
+		WebElement hobbies2 = driver.findElement(RelativeLocator.with(By.tagName("input")).below(hobbies1));
+		hobbies2.click();
+
+	}
+
+}

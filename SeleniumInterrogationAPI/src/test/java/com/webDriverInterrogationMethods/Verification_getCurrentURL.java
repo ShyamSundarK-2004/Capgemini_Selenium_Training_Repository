@@ -1,0 +1,25 @@
+package com.webDriverInterrogationMethods;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Verification_getCurrentURL {
+
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to("https://demowebshop.tricentis.com/");
+		Thread.sleep(2000);
+
+		try {
+			if ("https://demowebshop.tricentis.com/".equals(driver.getCurrentUrl()))
+				System.out.println("the navigation is successfull");
+			else
+				throw new Exception();
+		} catch (Exception e) {
+			System.out.println("navigation is failed");
+		}
+		driver.quit();
+
+	}
+}

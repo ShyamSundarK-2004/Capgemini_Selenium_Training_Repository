@@ -1,0 +1,64 @@
+package com.webEleementInterrogationMethods;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.locators.RelativeLocator;
+
+public class TestCase02 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+
+		WebDriver driver = new ChromeDriver();
+
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.get("https://opensource-demo.orangehrmlive.com/");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[starts-with(@name,'user')]")).sendKeys("Admin");
+
+		driver.findElement(RelativeLocator.with(By.name("password"))).sendKeys("admin123");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("/html/body/div/div//button")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("(//img[@alt='profile picture'])[1]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.linkText("Change Password")).click();
+		Thread.sleep(2000);
+
+		String expectedUrl = "changePassword";
+		String actualUrl = driver.getCurrentUrl();
+
+		if (actualUrl.contains(expectedUrl)) {
+			System.out.println("Change Password page loaded successfully");
+		} else {
+			System.out.println("Failed to load Change Password page");
+		}
+
+		driver.navigate().back();
+		wait.until(ExpectedConditions.urlContains("dashboard"));
+
+		if (driver.getTitle().contains("OrangeHRM")) {
+			System.out.println("Back navigation successful");
+		}
+
+		driver.navigate().forward();
+		wait.until(ExpectedConditions.urlContains("changePassword"));
+
+		if (driver.getCurrentUrl().contains("changePassword")) {
+			System.out.println("Forward navigation successful");
+		}
+
+		driver.navigate().refresh();
+		wait.until(ExpectedConditions.urlContains("changePassword"));
+
+		if (driver.getCurrentUrl().contains("changePassword")) {
+			System.out.println("Refresh successful and URL validated");
+		}
+
+	}
+
+}

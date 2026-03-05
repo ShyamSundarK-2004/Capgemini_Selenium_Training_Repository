@@ -1,0 +1,26 @@
+package com.navigationAPI;
+
+import java.net.URL;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Navigate_To_URL_Example {
+	public static void main(String[] args) throws InterruptedException {
+
+		WebDriver driver = new ChromeDriver();
+
+		driver.manage().window().maximize();
+
+		driver.get("https://www.google.com");
+		Thread.sleep(2000);
+
+		driver.navigate().to(new URL("https://www.youtube.com"));
+		Thread.sleep(2000);
+
+		driver.navigate().to("https://www.netflix.com");
+		Thread.sleep(2000);
+
+	}
+
+}

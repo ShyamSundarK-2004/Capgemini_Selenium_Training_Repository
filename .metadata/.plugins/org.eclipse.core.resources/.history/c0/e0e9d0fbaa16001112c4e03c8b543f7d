@@ -1,0 +1,26 @@
+package com.webDriverInterrogationMethods;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Verification_WindowHandle {
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.navigate().to("https://demowebshop.tricentis.com/");
+		Thread.sleep(2000);
+
+		// fetching the session ID
+		System.out.println(driver.getWindowHandle());
+		// refreshing the page
+//		driver.navigate().refresh();
+		// navigating to same page again
+		driver.navigate().to("https://demowebshop.tricentis.com/");
+		// again printing the session ID
+		System.out.println(driver.getWindowHandle());
+
+	}
+}

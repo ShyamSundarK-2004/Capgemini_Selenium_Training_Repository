@@ -1,0 +1,10 @@
+package com.navigationAPI;
+
+public class NavigationAPI_Example {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

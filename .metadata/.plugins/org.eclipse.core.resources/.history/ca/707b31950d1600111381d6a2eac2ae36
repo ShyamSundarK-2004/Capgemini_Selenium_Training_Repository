@@ -1,0 +1,25 @@
+package com.Selenium.WebElementPractise.InteractingWithFormElements;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class InteractingWithFromElements {
+
+	public static void main(String[] args) {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.navigate().to("https://demo.automationtesting.in/Register.html");
+		WebElement firstname = driver.findElement(By.xpath("//input[@placeholder='First Name']"));
+		firstname.sendKeys("Shyam");
+		WebElement lastname = driver.findElement(By.xpath("//input[@placeholder='Last Name']"));
+		lastname.sendKeys("Sundar K");
+		driver.findElement(By.cssSelector("[value='Male']")).sendKeys("");
+
+	}
+
+}
