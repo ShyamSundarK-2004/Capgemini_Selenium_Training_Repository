@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\Selenium_Practise_TestCases\src\test\java\com\practise\testcases\IceHrm_Automation_Testcase05.java"/>
 			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Automation Testing Capg\SeleniumSelectMethods\src\test\java\com\selenium\SelectMethods\TestCase01.java"/>
 			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Automation Testing Capg\SeleniumSelectMethods\src\test\java\com\selenium\SelectMethods"/>
 			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Automation Testing Capg\SeleniumInterrogationAPI\src\test\java\com\webEleementInterrogationMethods\TestCase02.java"/>
@@ -52,6 +53,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="SeleniumSynchronization"/>
 			<item value="SeleniumPopups"/>
 		</list>
 		<list key="projectNameTemplate">
