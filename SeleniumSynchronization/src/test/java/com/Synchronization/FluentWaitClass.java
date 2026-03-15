@@ -19,6 +19,7 @@ public class FluentWaitClass {
 		driver.get("https://www.shoppersstack.com/products_page/57");
 		driver.findElement(By.name("Check Delivery")).sendKeys("600099");
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("Check"))).click();
+
 	}
 
 }

@@ -1,8 +1,0 @@
-package com.navigationAPI;
-
-public class Navigate_To_URL_Example {
-	public static void main(String[] args) {
-
-	}
-
-}

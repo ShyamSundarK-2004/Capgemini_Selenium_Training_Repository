@@ -23,18 +23,18 @@ public class TestCase03 {
 
 		driver.findElement(By.xpath("//span[.='Admin']")).click();
 
-		driver.findElement(By.xpath("//div[@class='orangehrm-header-container']//button")).click();
+//		driver.findElement(By.xpath("//div[@class='orangehrm-header-container']//button")).click();
 
 		WebElement dropdown = driver.findElement(By.xpath("((//div[@class='oxd-select-text-input'])[1])"));
 		dropdown.click();
 		dropdown.sendKeys(Keys.ARROW_DOWN);
 		dropdown.sendKeys(Keys.ENTER);
-		if(dropdown.getText().contains("Admin"))
+		if (dropdown.getText().contains("Admin"))
 			System.out.println("first select verfied");
 		dropdown.click();
 		dropdown.sendKeys(Keys.ARROW_DOWN, Keys.ARROW_DOWN);
 		dropdown.sendKeys(Keys.ENTER);
-		if(dropdown.getText().contains("ESS"))
+		if (dropdown.getText().contains("ESS"))
 			System.out.println("Second select verfied");
 		driver.findElement(By.xpath("//div[@class='oxd-form-actions']//button[@type='button']")).click();
 		driver.findElement(By.xpath("//img[@alt=\"profile picture\"]")).click();

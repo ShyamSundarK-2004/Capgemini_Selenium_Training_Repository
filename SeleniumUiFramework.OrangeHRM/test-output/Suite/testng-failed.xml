@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="edgeTest1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.orangehrm.seleniumuiframework.requirement.Recruitement_Test">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="AfterMwthod"/>
+          <include name="beforeSuite"/>
+          <include name="logout"/>
+          <include name="login"/>
+          <include name="requirement_test"/>
+          <include name="AfterSuite"/>
+          <include name="launchingBrowser"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- com.orangehrm.seleniumuiframework.requirement.Recruitement_Test -->
+    </classes>
+  </test> <!-- edgeTest1(failed) -->
+  <test thread-count="5" parallel="tests" name="edgeTest2(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.orangehrm.seleniumuiframework.requirement.Vacancies_Test">
+        <methods>
+          <include name="AfterMwthod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="AfterSuite"/>
+          <include name="launchingBrowser"/>
+          <include name="AfterTest"/>
+          <include name="RequirementVacancy"/>
+        </methods>
+      </class> <!-- com.orangehrm.seleniumuiframework.requirement.Vacancies_Test -->
+    </classes>
+  </test> <!-- edgeTest2(failed) -->
+  <test thread-count="5" parallel="tests" name="chromeTest1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.orangehrm.seleniumuiframework.pim.Transaction_Test">
+        <methods>
+          <include name="AfterMwthod"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="AfterSuite"/>
+          <include name="launchingBrowser"/>
+          <include name="AfterTest"/>
+          <include name="ConfigureEmployee"/>
+        </methods>
+      </class> <!-- com.orangehrm.seleniumuiframework.pim.Transaction_Test -->
+    </classes>
+  </test> <!-- chromeTest1(failed) -->
+  <test thread-count="5" parallel="tests" name="chromeTest2(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.orangehrm.seleniumuiframework.pim.PIM_Test">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="AfterMwthod"/>
+          <include name="beforeSuite"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="AfterSuite"/>
+          <include name="pimModule"/>
+          <include name="launchingBrowser"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- com.orangehrm.seleniumuiframework.pim.PIM_Test -->
+    </classes>
+  </test> <!-- chromeTest2(failed) -->
+  <test thread-count="5" parallel="classes" name="chromeTest3(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.orangehrm.seleniumuiframework.my_info.MyInfo_Test">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="AfterMwthod"/>
+          <include name="MyInfoTest"/>
+          <include name="beforeSuite"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="AfterSuite"/>
+          <include name="launchingBrowser"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- com.orangehrm.seleniumuiframework.my_info.MyInfo_Test -->
+    </classes>
+  </test> <!-- chromeTest3(failed) -->
+</suite> <!-- Failed suite [Suite] -->

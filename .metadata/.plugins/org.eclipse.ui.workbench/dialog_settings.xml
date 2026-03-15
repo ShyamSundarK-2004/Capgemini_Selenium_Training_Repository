@@ -5,6 +5,7 @@
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="org.eclipse.jdt.ui.java"/>
 			<item value="org.eclipse.jpt.jaxb"/>
+			<item value="org.testng.eclipse"/>
 		</list>
 		<section name="NewWizard.dialogBounds">
 			<item key="DIALOG_X_ORIGIN" value="341"/>
@@ -33,5 +34,12 @@
 			<item key="DIALOG_HEIGHT" value="550"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="-47"/>
+		<item key="DIALOG_Y_ORIGIN" value="-60"/>
+		<item key="DIALOG_WIDTH" value="810"/>
+		<item key="DIALOG_HEIGHT" value="752"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>
