@@ -13,6 +13,7 @@ public class PIM_Test extends BaseClass {
 
 	@Test
 	public void pimModule() {
+
 		// adding employee details
 
 		// click in pim module

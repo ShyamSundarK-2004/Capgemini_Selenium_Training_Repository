@@ -10,8 +10,9 @@ public class LoginTest extends BaseClass {
 	public void login() {
 		LoginPage_PageFactory lg = new LoginPage_PageFactory(driver);
 		lg.webpage_url("https://www.saucedemo.com/");
-		lg.enterCredentials("standard_user", "secret_sauce");
-		lg.clickLogin();
+		lg.setUsername("standard_user");
+		lg.setPassword("secret_sauce");
+		lg.ClickLoginbtn();
 
 	}
 }

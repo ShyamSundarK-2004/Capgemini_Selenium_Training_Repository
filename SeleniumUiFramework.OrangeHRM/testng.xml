@@ -1,51 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Suite">
-	<test thread-count="5" name="chromeTest1">
-		<parameter name="browser" value="chrome">
-			<classes>
-				<class
-					name="com.orangehrm.seleniumuiframework.pim.Transaction_Test" />
-			</classes>
-		</parameter>
+<suite parallel="classes" name="Suite">
+	<test thread-count="5" parallel="tests" name="Test">
+		<classes>
+			<class
+				name="com.orangehrm.seleniumuiframwork.pim_test.AddEmployeeTest" />
+
+		</classes>
 	</test>
-	<test thread-count="5" name="chromeTest2">
-		<parameter name="browser" value="chrome">
-			<classes>
-				<class name="com.orangehrm.seleniumuiframework.pim.PIM_Test" />
-			</classes>
-		</parameter>
+	<test thread-count="5" parallel="tests" name="Test1">
+		<classes>
+
+			<class
+				name="com.orangehrm.seleniumuiframwork.pim_test.AddTerminationReasonTest" />
+		</classes>
 	</test>
-	<test thread-count="5" name="edgeTest1">
-		<parameter name="browser" value="chrome">
-			<classes>
-				<class
-					name="com.orangehrm.seleniumuiframework.requirement.Recruitement_Test" />
-			</classes>
-		</parameter>
-	</test>
-	<test thread-count="5" name="edgeTest2">
-		<parameter name="browser" value="chrome">
-			<classes>
-				<class
-					name="com.orangehrm.seleniumuiframework.requirement.Vacancies_Test"
-				/>
-			</classes>
-		</parameter>
-	</test>
-	<test thread-count="5" parallel="classes" name="chromeTest3">
-		<parameter name="browser" value="chrome">
-			<classes>
-				<class
-					name="com.orangehrm.seleniumuiframework.my_info.MyInfo_Test" />
-			</classes>
-		</parameter>
-	</test>
-	<test thread-count="5" parallel="classes" name="FirefoxTest">
-		<parameter name="browser" value="chrome">
-			<classes>
-				<class name="com.orangehrm.seleniumuiframework.buzz.Buzz_Test" />
-			</classes>
-		</parameter>
-	</test>
-</suite>
+</suite> <!--
+Suite -->

@@ -1,0 +1,68 @@
+package com.orangehrm.seleniumuiframwork.object_repository;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class DashboardPage {
+
+	public DashboardPage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
+
+	// pim module
+	@FindBy(linkText = "PIM")
+	private WebElement PIMModule;
+
+	// profile menu
+	@FindBy(css = "[class='oxd-userdropdown-img']")
+	private WebElement profileMenu;
+
+	// logout button
+	@FindBy(linkText = "Logout")
+	private WebElement logoutbtn;
+
+	// recruitment module
+	@FindBy(xpath = "//span[text()='Recruitment']")
+	private WebElement recruitmentModule;
+
+	public WebElement getPIMModule() {
+		return PIMModule;
+	}
+
+	public void ClickPIMModule() {
+		getPIMModule().click();
+	}
+
+	public WebElement getRecruitmentModule() {
+		return recruitmentModule;
+	}
+
+	public void ClickRecruitmentModule() {
+		getRecruitmentModule().click();
+	}
+
+	public WebElement getProfileMenu() {
+		return profileMenu;
+	}
+
+	public void ClickProfileMenu() {
+		getProfileMenu().click();
+	}
+
+	public WebElement getLogoutbtn() {
+		return logoutbtn;
+	}
+
+	public void ClickLogoutbtn() {
+		getLogoutbtn().click();
+	}
+
+	public void logout() {
+
+		ClickProfileMenu();
+		ClickLogoutbtn();
+	}
+
+}

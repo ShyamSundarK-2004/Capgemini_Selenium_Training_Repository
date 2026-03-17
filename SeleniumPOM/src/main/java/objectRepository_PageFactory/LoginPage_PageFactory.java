@@ -17,25 +17,37 @@ public class LoginPage_PageFactory {
 
 	// Locators using selenium annotation
 	@FindBy(id = "user-name")
-	WebElement username;
+	private WebElement username;
 	@FindBy(id = "password")
-	WebElement password;
+	private WebElement password;
 	@FindBy(id = "login-button")
-	WebElement loginbtn;
+	private WebElement loginbtn;
 
+	// Business logic for entering credentials
 	// getting website url
 	public void webpage_url(String url) {
 		driver.get(url);
 	}
 
-	// Business logic for entering credentials
-	public void enterCredentials(String un, String pwd) {
-		username.sendKeys(un);
-		password.sendKeys(pwd);
+	public WebElement getUsername() {
+		return username;
 	}
 
-	// Method to click the login button
-	public void clickLogin() {
+	public void setUsername(String username) {
+		this.username.sendKeys(username);
+	}
+
+	public WebElement getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password.sendKeys(password);
+		;
+	}
+
+	public void ClickLoginbtn() {
 		loginbtn.click();
 	}
+
 }
