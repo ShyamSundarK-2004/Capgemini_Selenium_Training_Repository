@@ -2,17 +2,6 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\SeleniumSynchronization\pom.xml"/>
-			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\SeleniumTestNG\src\test\java\com\selenium_invocationcount\Swaglab_Automation.java"/>
-			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\SeleniumTestNG\src\test\java\com\SeleniumTestNG\BaseClass.java"/>
-			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\SeleniumUiFramework.OrangeHRM\src\test\java\com\orangehrm\seleniumuiframework\requirement\Requirement_Test.java"/>
-			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\SeleniumTestNG\src\test\java\com\SeleniumTestNG\TestPractise.java"/>
-			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\SeleniumJavaScriptExecutor\src\test\java\com\selenium_javascriptExecutor\Perform_Action_on_Hidden_Element.java"/>
-			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\SeleniumWebElement\pom.xml"/>
-			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\Selenium_Practise_TestCases\src\test\java\com\practise\testcases\IceHrm_Automation_Testcase05.java"/>
-			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Automation Testing Capg\SeleniumSelectMethods\src\test\java\com\selenium\SelectMethods\TestCase01.java"/>
-			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Automation Testing Capg\SeleniumSelectMethods\src\test\java\com\selenium\SelectMethods"/>
-			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Automation Testing Capg\SeleniumInterrogationAPI\src\test\java\com\webEleementInterrogationMethods\TestCase02.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -64,13 +53,14 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Selenium-UI-Framework.orangeHRM"/>
+			<item value="SeleniumTestNG"/>
 			<item value="SeleniumParametrization"/>
 			<item value="Selenium_pom"/>
 			<item value="com.selenium_browserLaunching"/>
 			<item value="testyantra.seleniumuiframework"/>
 			<item value="com.testyantra.seleniumuiframework"/>
 			<item value="SeleniumUiFramework.OrangeHRM"/>
-			<item value="SeleniumTestNG"/>
 			<item value="SeleniumJavaScriptExecutor"/>
 			<item value="SeleniumSynchronization"/>
 			<item value="SeleniumPopups"/>
