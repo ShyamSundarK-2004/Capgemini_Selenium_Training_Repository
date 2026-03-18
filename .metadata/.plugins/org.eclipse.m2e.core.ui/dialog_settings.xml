@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\SeleniumSynchronization\pom.xml"/>
 			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\SeleniumTestNG\src\test\java\com\selenium_invocationcount\Swaglab_Automation.java"/>
 			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\SeleniumTestNG\src\test\java\com\SeleniumTestNG\BaseClass.java"/>
 			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\SeleniumUiFramework.OrangeHRM\src\test\java\com\orangehrm\seleniumuiframework\requirement\Requirement_Test.java"/>
@@ -63,6 +64,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="SeleniumParametrization"/>
 			<item value="Selenium_pom"/>
 			<item value="com.selenium_browserLaunching"/>
 			<item value="testyantra.seleniumuiframework"/>

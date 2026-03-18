@@ -1,0 +1,7 @@
+{
+	"login": {
+		"user": "name:username",
+		"pwd": "name:password",
+		"loginbtn": "cssSelector:[type='Submit']"
+	}
+}

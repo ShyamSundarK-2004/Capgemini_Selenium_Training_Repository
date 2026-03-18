@@ -1,4 +1,4 @@
-package demopackage;
+package com.seleniumparametrization.properties;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,7 +13,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-public class Demo {
+public class Data_From_Properties {
 	WebDriver driver;
 	@FindAll({ @FindBy(id = "user-name"), @FindBy(name = "username") })
 	public WebElement user;

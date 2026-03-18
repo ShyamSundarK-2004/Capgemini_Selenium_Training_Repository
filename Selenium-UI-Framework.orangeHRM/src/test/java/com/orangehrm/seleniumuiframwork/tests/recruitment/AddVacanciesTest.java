@@ -1,22 +1,22 @@
-package com.orangehrm.seleniumuiframwork.recruitment_test;
+package com.orangehrm.seleniumuiframwork.tests.recruitment;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.genericUtilities.BaseClass;
+import com.orangehrm.seleniumuiframework.base.BaseClass;
 
-public class AddRecruitmentTest extends BaseClass {
+public class AddVacanciesTest extends BaseClass {
 
 	@Test
 	public void addRecruitment() {
 		// click recruitment module
-		dashboardPage.ClickRecruitmentModule();
+		dashboardPage.clickRecruitmentModule();
 
 		// click vacancies button
-		recruitmentPage.ClickVacancies();
+		recruitmentPage.clickVacancies();
 
 		// click add button in vacancies
-		vacancies.ClickAddBtn();
+		vacancies.clickAddBtn();
 
 		// enter vacancy name
 		addVacanciesPage.setVacancyName("a10000000000002026");
