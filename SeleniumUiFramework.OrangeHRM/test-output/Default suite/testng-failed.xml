@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demopackage.Demo">
+      <class name="com.orangehrm.seleniumuiframwork.recruitment_test.AddRecruitmentTest">
         <methods>
-          <include name="practice"/>
+          <include name="login"/>
+          <include name="addRecruitment"/>
+          <include name="loadData"/>
+          <include name="launchingBrowser"/>
+          <include name="AfterClass"/>
         </methods>
-      </class> <!-- demopackage.Demo -->
+      </class> <!-- com.orangehrm.seleniumuiframwork.recruitment_test.AddRecruitmentTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
