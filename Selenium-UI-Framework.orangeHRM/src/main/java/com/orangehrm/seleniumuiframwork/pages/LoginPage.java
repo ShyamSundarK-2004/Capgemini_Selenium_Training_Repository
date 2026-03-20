@@ -68,7 +68,7 @@ public class LoginPage {
 		return loginbtn;
 	}
 
-	public void ClickLoginbtn() {
+	public void clickLoginbtn() {
 		getLoginbtn().click();
 	}
 
@@ -123,7 +123,7 @@ public class LoginPage {
 	public void login(String username, String password) {
 		setUsername(username);
 		setPassword(password);
-		ClickLoginbtn();
+		clickLoginbtn();
 	}
 
 }
