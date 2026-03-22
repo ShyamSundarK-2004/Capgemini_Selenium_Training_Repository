@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBys"/>
-    <fullyQualifiedTypeName name="objectRepository.BaseClass"/>
     <fullyQualifiedTypeName name="objectRepository.LoginPage"/>
     <fullyQualifiedTypeName name="objectRepository_PageFactory.LoginPage_PageFactory"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.opera.OperaDriver"/>
     <fullyQualifiedTypeName name="org.testng.annotations.BeforeClass"/>
     <fullyQualifiedTypeName name="net.bytebuddy.implementation.bind.annotation.FieldProxy.Binder.FieldResolver.ForGetterSetterPair"/>
     <fullyQualifiedTypeName name="com.orangehrm.seleniumuiframwork.object_repository.DashboardPage"/>
@@ -50,9 +47,6 @@
     <fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
-    <fullyQualifiedTypeName name="java.time.Duration"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
@@ -60,4 +54,10 @@
     <fullyQualifiedTypeName name="java.util.Properties"/>
     <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
     <fullyQualifiedTypeName name="net.bytebuddy.agent.builder.AgentBuilder.InitializationStrategy.SelfInjection.Split"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.opera.OperaDriver"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
+    <fullyQualifiedTypeName name="java.time.Duration"/>
 </qualifiedTypeNameHistroy>

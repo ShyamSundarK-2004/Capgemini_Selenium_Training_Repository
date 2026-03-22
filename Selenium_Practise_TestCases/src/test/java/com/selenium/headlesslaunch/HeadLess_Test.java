@@ -7,14 +7,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 public class HeadLess_Test {
 	WebDriver driver = null;
-	WebDriverWait wait = null;
 
 	@Test
 	public void launch() {
@@ -26,10 +24,8 @@ public class HeadLess_Test {
 		driver = new ChromeDriver(option);
 
 		driver.manage().window().maximize();
-
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		driver.get("https://www.saucedemo.com/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
 		driver.findElement(By.id("user-name")).sendKeys("standard_user");
 

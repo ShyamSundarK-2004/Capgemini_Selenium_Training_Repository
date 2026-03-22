@@ -11,7 +11,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.38.0</version>
+			<version>3.141.59</version>
 			<scope>compile</scope>
 		</dependency>
 		<!-- Source: https://mvnrepository.com/artifact/org.testng/testng -->
@@ -21,13 +21,11 @@
 			<version>7.10.2</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- Source:
-		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-opera-driver -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-opera-driver</artifactId>
-			<version>4.4.0</version>
-			<scope>runtime</scope>
+			<version>4.0.0</version>
 		</dependency>
+
 	</dependencies>
 </project>
