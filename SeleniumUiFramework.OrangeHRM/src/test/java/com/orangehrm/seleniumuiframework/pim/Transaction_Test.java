@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import com.genericUtilities.BaseClass;
+import com.orangehrm.seleniumuiframework.generic_utilities.BaseClass;
 
 public class Transaction_Test extends BaseClass {
 

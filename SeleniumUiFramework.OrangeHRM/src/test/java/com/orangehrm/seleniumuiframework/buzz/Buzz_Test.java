@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
-import com.genericUtilities.BaseClass;
+import com.orangehrm.seleniumuiframework.generic_utilities.BaseClass;
 
 public class Buzz_Test extends BaseClass {
 	@Test

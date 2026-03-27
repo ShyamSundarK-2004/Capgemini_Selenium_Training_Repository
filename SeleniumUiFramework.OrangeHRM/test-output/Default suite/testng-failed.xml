@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Demo.LoginUsingXML">
+      <class name="com.takescreenshot.TakeScreenShot_Sample">
         <methods>
-          <include name="login"/>
+          <include name="screenShot"/>
         </methods>
-      </class> <!-- Demo.LoginUsingXML -->
+      </class> <!-- com.takescreenshot.TakeScreenShot_Sample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

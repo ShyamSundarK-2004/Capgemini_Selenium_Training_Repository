@@ -3,7 +3,7 @@ package com.orangehrm.seleniumuiframwork.recruitment_test;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.genericUtilities.BaseClass;
+import com.orangehrm.seleniumuiframework.generic_utilities.BaseClass;
 
 public class AddVacanciesTest extends BaseClass {
 

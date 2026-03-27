@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="java.lang.Class">
-		<item key="replaceBarOpen" value="false"/>
+		<item key="replaceBarOpen" value="true"/>
 		<list key="findhistory">
+			<item value="🔥"/>
+			<item value="get"/>
+			<item value="📌"/>
+			<item value="action"/>
+			<item value="🔹"/>
 			<item value="url"/>
 			<item value="sleep"/>
 			<item value="class"/>
@@ -13,8 +18,10 @@
 			<item value="driver"/>
 			<item value="Thread.sleep(2000);"/>
 			<item value="getpositi"/>
-			<item value="isDispla"/>
-			<item value="is"/>
+		</list>
+		<list key="replacehistory">
+			<item value=" act"/>
+			<item value=" "/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">

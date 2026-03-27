@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\Sample_OrangeHRM\pom.xml"/>
+			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\Selenium-UI-Framework.orangeHRM\src\main\java\com\orangehrm\seleniumuiframework\utilities\ActionsUtility.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -53,6 +55,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Selenium-Ui-Framework_OrangeHRM"/>
+			<item value="Sample_OrangeHRM"/>
 			<item value="Selenium-UI-Framework.orangeHRM"/>
 			<item value="SeleniumTestNG"/>
 			<item value="SeleniumParametrization"/>

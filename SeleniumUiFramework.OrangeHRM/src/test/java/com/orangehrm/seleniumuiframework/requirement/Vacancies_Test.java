@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
-import com.genericUtilities.BaseClass;
+import com.orangehrm.seleniumuiframework.generic_utilities.BaseClass;
 
 public class Vacancies_Test extends BaseClass {
 	@Test

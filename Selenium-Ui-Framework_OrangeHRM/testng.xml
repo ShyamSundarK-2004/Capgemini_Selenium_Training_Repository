@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" thread-count="4">
+
+	<test parallel="classes" thread-count="4" name="AllTests">
+		<classes>
+			<class
+				name="com.orangehrm.seleniumuiframwork.tests.pim.AddEmployee_Test" />
+			<class
+				name="com.orangehrm.seleniumuiframwork.tests.pim.AddTerminationReasonTest" />
+			<class
+				name="com.orangehrm.seleniumuiframework.recruitment.AddVacancy_Test" />
+			<class
+				name="com.orangehrm.seleniumuiframework.recruitment.AddCandidates_Test" />
+		</classes>
+	</test>
+
+</suite>
