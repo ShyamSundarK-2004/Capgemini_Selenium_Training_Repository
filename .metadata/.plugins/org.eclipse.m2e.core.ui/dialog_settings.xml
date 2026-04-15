@@ -2,6 +2,10 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\Selenium_Practise_TestCases\src\test\java\com\Sample\apollo247\Demo.java"/>
+			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\Selenium_BDD_Cucumber\src\main\java\featureFile_ninjacrm"/>
+			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\Selenium_UI_Framework_NinjaCRM\src\main\java\com\ninjacrm\seleniumuiframework\utilities\BaseClass.java"/>
+			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\Selenium-Ui-Framework_OrangeHRM\src\test\java\com\orangehrm\seleniumuiframwork\tests\pim\AddTerminationReasonTest.java"/>
 			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\Sample_OrangeHRM\pom.xml"/>
 			<item value="C:\Users\Shyam Sundar\OneDrive\Desktop\Capgemini Selenium Training\Selenium-UI-Framework.orangeHRM\src\main\java\com\orangehrm\seleniumuiframework\utilities\ActionsUtility.java"/>
 		</list>
@@ -46,6 +50,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.apollo247"/>
 			<item value="com.capgemini.training"/>
 			<item value="com.testyantra.seleniumuiframework"/>
 			<item value="com.capgemini.SeleniumUIFramework"/>
@@ -55,6 +60,12 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="com.apollo247.testing"/>
+			<item value="SeleniumUIFramework_SauceLabs"/>
+			<item value="Selenium_BDD_Cucumber"/>
+			<item value="Selenium_UI_Framework_NinjaCRM"/>
+			<item value="Selenium"/>
+			<item value="Amazon_Selenium-UI-Framework"/>
 			<item value="Selenium-Ui-Framework_OrangeHRM"/>
 			<item value="Sample_OrangeHRM"/>
 			<item value="Selenium-UI-Framework.orangeHRM"/>
@@ -64,10 +75,6 @@
 			<item value="com.selenium_browserLaunching"/>
 			<item value="testyantra.seleniumuiframework"/>
 			<item value="com.testyantra.seleniumuiframework"/>
-			<item value="SeleniumUiFramework.OrangeHRM"/>
-			<item value="SeleniumJavaScriptExecutor"/>
-			<item value="SeleniumSynchronization"/>
-			<item value="SeleniumPopups"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

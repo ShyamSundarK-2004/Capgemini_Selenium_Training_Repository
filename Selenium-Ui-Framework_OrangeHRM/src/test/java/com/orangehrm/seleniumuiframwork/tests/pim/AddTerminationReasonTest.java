@@ -23,7 +23,7 @@ public class AddTerminationReasonTest extends BaseClass {
 		terminationPage.clickAddBtn();
 
 		// give termination reason
-		terminationPage.setReason(Reason+"sample");
+		terminationPage.setReason(Reason);
 
 		// click on save button
 		terminationPage.clickSaveBtn();

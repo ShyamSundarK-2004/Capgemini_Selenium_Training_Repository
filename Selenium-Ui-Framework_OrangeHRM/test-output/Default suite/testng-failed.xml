@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.orangehrm.seleniumuiframework.recruitment.AddVacancy_Test">
+      <class name="com.orangehrm.seleniumuiframwork.tests.pim.AddTerminationReasonTest">
         <methods>
           <include name="logout"/>
-          <include name="quitBrowser"/>
           <include name="login"/>
+          <include name="quitBrowser"/>
           <include name="launchingBrowser"/>
-          <include name="addRecruitment"/>
+          <include name="AddTerminationReason"/>
         </methods>
-      </class> <!-- com.orangehrm.seleniumuiframework.recruitment.AddVacancy_Test -->
+      </class> <!-- com.orangehrm.seleniumuiframwork.tests.pim.AddTerminationReasonTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
